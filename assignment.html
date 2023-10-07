@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #ff000000;
+            color: #080505;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #f0e3f0;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #bf0cfa;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <!-- Your content for the home section goes here -->
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <!-- Hi! I'm Anita Nwokobia, a buisness woman and an aspiring web developer. -->
+        </section>
+        <section id="work">
+            <h2>Work</h2>
+            <!-- buisness woman -->
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <!-- tech baby! -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 My Portfolio
+    </footer>
+</body>
+</html>
